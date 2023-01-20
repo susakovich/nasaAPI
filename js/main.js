@@ -12,6 +12,13 @@ function getPhoto() {
     .then((data) => {
       console.log(data); // to check containing properties in object
 
+      // add conditional if media type isn't image, since there are videos also
+      if (data.media_type === "image") {
+        document.querySelector("img").src = data.hdurl;
+      } else if (data.media_type === "video") {
+        document.querySelector("iframe").src = data.url;
+      }
+
       document.querySelector("h2").innerText = data.title;
       document.querySelector("img").src = data.hdurl;
       document.querySelector("p").innerText = data.explanation;
