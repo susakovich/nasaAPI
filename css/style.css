@@ -1,28 +1,65 @@
 /* Roboto Font */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
-
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 body {
   font-family: "Roboto", sans-serif;
+  color: #fff;
 }
-
 h1,
-h2,
-h4 {
-  color: darkblue;
+label,
+input,
+button {
+  margin-bottom: 10px;
 }
-
 label,
 p {
   font-size: 20px;
 }
-
+.desc {
+  width: 55%;
+}
 img {
   display: block;
-  margin: 0 auto;
-  width: 75%;
-  height: 75%;
+  width: 55%;
+  height: 55%;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  z-index: -1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+button {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.desc {
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+span {
+  text-decoration: underline;
 }

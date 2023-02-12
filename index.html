@@ -8,25 +8,34 @@
     <title>NASA Photo of the Day</title>
   </head>
   <body>
-    <h1>Welcome to NASA's photo of the day API</h1>
+    <video autoplay muted loop id="myVideo">
+      <source src="universe.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <h1>NASA's "Astronomy Picture of the Day (APOD)"</h1>
 
-    <label for="nasaApi"
-      >Choose a date you prefer, to check the photo of the day, made by
-      Hubble</label
-    >
-    <input type="date" name="nasaApi" id="nasaApi" />
-    <button id="generatePic">Get photo</button>
+      <label for="nasaApi"
+        >Choose a date you prefer. First photo made 16.06.1995</label
+      >
+      <input type="date" name="nasaApi" id="nasaApi" />
+      <button id="generatePic">Get photo</button>
 
-    <h2>Name of the photo</h2>
-    <br />
-    <img src="" alt="nasa's photo of the day" />
-    <!-- add iframe for videos -->
-    <iframe src="" frameborder="0"></iframe>
+      <h2>Name of the photo</h2>
+      <br />
+      <img src="" alt="nasa's photo of the day" />
+      <!-- add iframe for videos -->
+      <!-- <iframe src="" frameborder="0"></iframe> -->
 
-    <p>Description</p>
+      <p class="desc">Description</p>
 
-    <h4>NASA Rules</h4>
-
+      <h4>
+        <a
+          href="https://www.pexels.com/video/the-sun-illuminating-earth-s-surface-1851190/"
+          target="_blank"
+          >Background video by <span>Ingrid North</span></a
+        >
+      </h4>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 // add onClick listener to button
 document.querySelector("button").addEventListener("click", getPhoto);
+document.querySelector("img").src = "";
 
 function getPhoto() {
   const choice = document.querySelector("input").value;
